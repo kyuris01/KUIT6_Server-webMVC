@@ -32,6 +32,15 @@ import java.io.IOException;
 //}
 public class UpdateUserFormController implements Controller {
     public String process(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        return "/home.jsp";
+        HttpSession session = req.getSession();
+        User user = (User) session.getAttribute("user");
+        if(user == null) {
+            return"/user/login.jsp";
+        }
+        if(!user.getUserId().equals(req.getParameter("userId"))) {
+            return "redirect:/";
+
+        }
+        return"/user/updateForm.jsp";
     }
 }

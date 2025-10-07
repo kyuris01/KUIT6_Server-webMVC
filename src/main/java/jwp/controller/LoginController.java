@@ -29,6 +29,12 @@ import java.io.IOException;
 public class LoginController implements Controller {
 
     public String process(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        return "/home.jsp";
+        User user = MemoryUserRepository.getInstance().findUserById(req.getParameter("userId"));
+        if (user == null || !user.matchPassword(req.getParameter("password"))) {
+            return "redirect:/user/loginFailed.jsp";
+        }
+        HttpSession session = req.getSession();
+        session.setAttribute("user", user);
+        return "redirect:/";
     }
 }

@@ -34,6 +34,14 @@ import java.util.Collection;
 //}
 public class ListUserController implements Controller {
     public String process(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        return "/home.jsp";
+        HttpSession session = req.getSession();
+        Object value = session.getAttribute("user");
+        if (value == null) {
+            return "redirect:/";
+        }
+
+        Collection<User> users = MemoryUserRepository.getInstance().findAll();
+        req.setAttribute("users", users);
+        return "/user/list.jsp";
     }
 }

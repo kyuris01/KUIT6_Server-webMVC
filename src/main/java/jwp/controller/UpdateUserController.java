@@ -22,6 +22,9 @@ import java.io.IOException;
 //}
 public class UpdateUserController implements Controller {
     public String process(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        return "/home.jsp";
+        User user = new User(req.getParameter("userId"), req.getParameter("password"), req.getParameter("name"), req.getParameter("email"));
+        MemoryUserRepository.getInstance().changeUserInfo(user);
+        System.out.println("user 회원정보 수정 완료");
+        return "redirect:/user/list";
     }
 }

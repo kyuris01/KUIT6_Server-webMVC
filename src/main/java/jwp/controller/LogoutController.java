@@ -19,6 +19,8 @@ import java.io.IOException;
 //}
 public class LogoutController implements Controller {
     public String process(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        return "/home.jsp";
+        HttpSession session = req.getSession();
+        session.removeAttribute("user");
+        return "redirect:/";
     }
 }
