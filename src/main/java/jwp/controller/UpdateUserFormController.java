@@ -18,6 +18,10 @@ public class UpdateUserFormController extends HttpServlet {
 
         HttpSession session = req.getSession();
         User user = (User) session.getAttribute("user");
+        if(user == null) {
+            RequestDispatcher rd = req.getRequestDispatcher("/user/login.jsp");
+            rd.forward(req, resp);
+        }
         if(!user.getUserId().equals(req.getParameter("userId"))) {
             resp.sendRedirect("/");
             return;
