@@ -39,7 +39,7 @@ public class DispatcherServlet extends HttpServlet {
         rd.forward(req, resp);
     }
 
-    public void distributeToController(String uri, HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    public void distributeToController(String uri, HttpServletRequest req, HttpServletResponse resp) throws Exception {
         Controller controller = routes.get(uri);
         if (controller == null) {
             System.out.println("적합한 경로가 아닙니다");
@@ -58,7 +58,11 @@ public class DispatcherServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String uri = req.getRequestURI();
         System.out.println("get uri : " + uri);
-        distributeToController(uri, req, resp);
+        try {
+            distributeToController(uri, req, resp);
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
 //        Controller controller = routes.get(uri);
 //        if (controller == null) {
 //            System.out.println("적합한 경로가 아닙니다");
@@ -78,6 +82,10 @@ public class DispatcherServlet extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String uri = req.getRequestURI();
         System.out.println("post uri : " + uri);
-        distributeToController(uri, req, resp);
+        try {
+            distributeToController(uri, req, resp);
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
     }
 }
