@@ -1,5 +1,7 @@
 package jwp.controller;
 
+import jwp.dao.QuestionDao;
+
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -13,6 +15,7 @@ import java.util.Map;
 @WebServlet("/")
 public class DispatcherServlet extends HttpServlet {
     private Map<String, Controller> routes = new HashMap<>();
+    private final QuestionDao questionDao = new QuestionDao();
 
     @Override
     public void init() throws ServletException {
@@ -28,6 +31,7 @@ public class DispatcherServlet extends HttpServlet {
         routes.put("/user/list", new ListUserController());
         routes.put("/user/updateForm", new UpdateUserFormController());
         routes.put("/user/update", new UpdateUserController());
+        routes.put("/qna", new QnaController(questionDao));
     }
 
     public void redirect(String view, HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
