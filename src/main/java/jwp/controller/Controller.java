@@ -6,5 +6,5 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 public interface Controller {
-    public String process(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException;
+    public String process(HttpServletRequest req, HttpServletResponse resp) throws Exception;
 }

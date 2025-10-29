@@ -21,6 +21,7 @@
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$" />
   </component>
+  <component name="GradleMigrationSettings" migrationVersion="1" />
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
@@ -67,6 +68,9 @@
   </component>
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/KUIT6_Server-webMVC.java-webMVC.iml" filepath="$PROJECT_DIR$/KUIT6_Server-webMVC.java-webMVC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/KUIT6_Server-webMVC.java-webMVC.main.iml" filepath="$PROJECT_DIR$/KUIT6_Server-webMVC.java-webMVC.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/KUIT6_Server-webMVC.java-webMVC.test.iml" filepath="$PROJECT_DIR$/KUIT6_Server-webMVC.java-webMVC.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/java-webMVC.iml" filepath="$PROJECT_DIR$/java-webMVC.iml" />
       <module fileurl="file://$PROJECT_DIR$/org.example.java-webMVC.iml" filepath="$PROJECT_DIR$/org.example.java-webMVC.iml" />
       <module fileurl="file://$PROJECT_DIR$/org.example.java-webMVC.main.iml" filepath="$PROJECT_DIR$/org.example.java-webMVC.main.iml" />
@@ -177,7 +181,9 @@
         <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/8.5.42/28f493e36727cf549ee67c0052915275bc11bdee/tomcat-embed-core-8.5.42.jar!/" />
       </CLASSES>
       <JAVADOC />
-      <SOURCES />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/8.5.42/374fb280e08a104a36f9e9b7e1ecd92018dcaed9/tomcat-embed-core-8.5.42-sources.jar!/" />
+      </SOURCES>
     </library>
     <library name="Gradle: org.apache.tomcat.embed:tomcat-embed-el:8.5.42" type="java-imported" external-system-id="GRADLE">
       <properties groupId="org.apache.tomcat.embed" artifactId="tomcat-embed-el" version="8.5.42" baseVersion="8.5.42" />
