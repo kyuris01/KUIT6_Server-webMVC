@@ -6,16 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="2311fc85-738c-4de6-9309-a2b9a4649ea5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/java-webMVC.iws" beforeDir="false" afterPath="$PROJECT_DIR$/java-webMVC.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/core/jdbc/JdbcTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/jdbc/JdbcTemplate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jwp/controller/CreateQuestionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jwp/controller/CreateQuestionController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/jwp/controller/DispatcherServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jwp/controller/DispatcherServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jwp/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jwp/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jwp/controller/QnaController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jwp/controller/SignupController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jwp/controller/SignupController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jwp/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jwp/controller/HomeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/jwp/dao/QuestionDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jwp/dao/QuestionDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jwp/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jwp/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/home.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/include/navigation.jspf" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/include/navigation.jspf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/qna/form.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/qna/form.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jwp/model/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jwp/model/Question.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/qna/show.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/qna/show.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -277,7 +273,7 @@
       <workItem from="1761535565398" duration="4831000" />
       <workItem from="1761703698275" duration="6173000" />
       <workItem from="1761742967395" duration="7834000" />
-      <workItem from="1761835271336" duration="3122000" />
+      <workItem from="1761835271336" duration="7695000" />
     </task>
     <servers />
   </component>

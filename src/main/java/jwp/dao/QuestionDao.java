@@ -12,12 +12,14 @@ import java.util.List;
 
 public class QuestionDao {
 
-    private final JdbcTemplate<User> jdbcTemplate = new JdbcTemplate();
+    KeyHolder holder = new KeyHolder();
 
     public List<Question> findAll() throws SQLException {
 
+        JdbcTemplate<User> jdbcTemplate = new JdbcTemplate();
         String sql = "SELECT * FROM questions";
         RowMapper rowMapper = rs -> new Question(
+                rs.getLong("questionId"),
                 rs.getString("writer"),
                 rs.getString("title"),
                 rs.getString("contents"),
@@ -27,6 +29,8 @@ public class QuestionDao {
     }
 
     public Question insert(Question question) throws SQLException {
+        JdbcTemplate<User> jdbcTemplate = new JdbcTemplate();
+
         String sql = "INSERT INTO questions (writer, title, contents, createdDate, countOfAnswer) VALUES (?, ?, ?, ?, ?)";
 
 
@@ -37,10 +41,29 @@ public class QuestionDao {
             pstmt.setTimestamp(4, java.sql.Timestamp.valueOf(question.getCreatedDate()));
             pstmt.setInt(5, question.getCountOfAnswer());
         };
-        KeyHolder holder = new KeyHolder();
         jdbcTemplate.update(sql, pstmtSetter, holder);
-        System.out.println(holder.getId());
+        System.out.println("question = " + question.getQuestionId());
+        question.setQuestionId((long) holder.getId());
+        System.out.println("question = " + question.getQuestionId());
         return question;
+    }
+
+    public Question findQuestionById(Long questionId) throws SQLException {
+        JdbcTemplate<Question> jdbcTemplate = new JdbcTemplate();
+
+        String sql = "SELECT * FROM QUESTIONS WHERE questionId = ?";
+        PreparedStatementSetter preparedStatementSetter = preparedStatement -> {
+            preparedStatement.setLong(1, questionId);
+        };
+        RowMapper<Question> rowMapper = resultSet -> new Question(
+                resultSet.getLong("questionId"),
+                resultSet.getString("writer"),
+                resultSet.getString("title"),
+                resultSet.getString("contents"),
+                resultSet.getTimestamp("createdDate").toLocalDateTime(),
+                resultSet.getInt("countOfAnswer")
+        );
+        return jdbcTemplate.queryForObject(sql, preparedStatementSetter, rowMapper);
     }
 
 

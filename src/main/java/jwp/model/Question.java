@@ -10,7 +10,8 @@ public class Question {
     private LocalDateTime createdDate;
     private Integer countOfAnswer;
 
-    public Question(String writer, String title, String contents, LocalDateTime createdDate, Integer countOfAnswer) {
+    public Question(Long questionId, String writer, String title, String contents, LocalDateTime createdDate, Integer countOfAnswer) {
+        this.questionId = questionId;
         this.writer = writer;
         this.title = title;
         this.contents = contents;
@@ -24,5 +25,7 @@ public class Question {
     public String getContents() { return contents; }
     public LocalDateTime getCreatedDate() { return createdDate; }
     public int getCountOfAnswer() { return countOfAnswer; }
+
+    public void setQuestionId(Long questionId) { this.questionId = questionId; }
 
 }

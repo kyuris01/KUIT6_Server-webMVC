@@ -24,7 +24,7 @@ public class DispatcherServlet extends HttpServlet {
 
 
     public void registerRoutes() {
-        routes.put("/", new HomeController());
+        routes.put("/", new HomeController(questionDao));
         routes.put("/user/signup", new SignupController());
         routes.put("/user/login", new LoginController());
         routes.put("/user/logout", new LogoutController());
@@ -33,6 +33,7 @@ public class DispatcherServlet extends HttpServlet {
         routes.put("/user/update", new UpdateUserController());
         routes.put("/qna/form", new CreateQuestionFormController());
         routes.put("/qna/create", new CreateQuestionController(questionDao));
+        routes.put("/qna/show", new ShowController(questionDao));
     }
 
     public void redirect(String view, HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

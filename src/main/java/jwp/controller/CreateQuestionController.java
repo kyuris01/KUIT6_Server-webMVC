@@ -25,9 +25,10 @@ public class CreateQuestionController implements Controller {
             return "/qna/form.jsp";
         }
 
-        Question question = new Question(writer, title, contents, LocalDateTime.now(), 0);
+        Question question = new Question(null, writer, title, contents, LocalDateTime.now(), 0);
 
-        questionDao.insert(question);
+        question = questionDao.insert(question);
+        req.setAttribute("question", question);
         return "/qna/show.jsp";
     }
 }

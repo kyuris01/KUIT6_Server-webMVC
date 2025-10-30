@@ -15,13 +15,14 @@ import java.util.List;
 
 //@WebServlet("/")
 public class HomeController implements Controller {
-//	@Override
-//	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-//		RequestDispatcher rd = req.getRequestDispatcher("/home.jsp");
-//		rd.forward(req, resp);
-//	}
+
+	QuestionDao questionDao = new QuestionDao();
+
+	HomeController(QuestionDao questionDao) {
+		this.questionDao = questionDao;
+	}
+
 	public String process(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		QuestionDao questionDao = new QuestionDao();
 		try {
 			List<Question> questionList = questionDao.findAll();
 			req.setAttribute("questions", questionList);
