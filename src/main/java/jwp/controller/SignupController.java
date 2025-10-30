@@ -19,6 +19,7 @@ public class SignupController implements Controller {
     public String process(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException, SQLException {
         User user = new User(req.getParameter("userId"), req.getParameter("password"), req.getParameter("name"), req.getParameter("email"));
         userDao.insert(user);
+        System.out.println(userDao.findAll());
         return "redirect:/user/list";
     }
 }

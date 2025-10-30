@@ -31,7 +31,8 @@ public class DispatcherServlet extends HttpServlet {
         routes.put("/user/list", new ListUserController());
         routes.put("/user/updateForm", new UpdateUserFormController());
         routes.put("/user/update", new UpdateUserController());
-        routes.put("/qna", new QnaController(questionDao));
+        routes.put("/qna/form", new CreateQuestionFormController());
+        routes.put("/qna/create", new CreateQuestionController(questionDao));
     }
 
     public void redirect(String view, HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

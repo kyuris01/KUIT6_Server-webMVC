@@ -15,7 +15,9 @@ public class LoginController implements Controller {
     }
 
     public String process(HttpServletRequest req, HttpServletResponse resp) throws Exception {
+        System.out.println(req.getParameter("userId"));
         User user = userDao.findByUserId(req.getParameter("userId"));
+        System.out.println(user);
         if (user == null || !user.matchPassword(req.getParameter("password"))) {
             return "redirect:/user/loginFailed.jsp";
         }
