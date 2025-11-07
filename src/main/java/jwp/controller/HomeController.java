@@ -4,6 +4,8 @@ import jwp.dao.QuestionDao;
 import jwp.model.Question;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -15,9 +17,10 @@ public class HomeController {
 
     private final QuestionDao questionDao;
 
-    public String execute(HttpServletRequest req, HttpServletResponse resp) throws Exception {
+    @RequestMapping("/")
+    public String home(Model model) throws Exception {
         List<Question> questions = questionDao.findAll();
-        req.setAttribute("questions", questions);
+        model.addAttribute("questions", questions);
         return "/home";
     }
 }

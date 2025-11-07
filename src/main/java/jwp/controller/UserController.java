@@ -64,7 +64,7 @@ public class UserController {
 
         if (user != null && value != null) {
             if (user.equals(value)) {            // 수정되는 user와 수정하는 user가 동일한 경우
-                return "/user/updateForm.jsp";
+                return "user/updateForm";
             }
         }
         return "redirect:/";
@@ -72,16 +72,16 @@ public class UserController {
 
     @GetMapping("/form")
     public String form() throws Exception {
-        return "/user/form.jsp";
+        return "user/form";
     }
 
     @GetMapping("/loginForm")
     public String loginForm() throws Exception {
-        return "/user/loginForm.jsp";
+        return "user/loginForm";
     }
 
     @GetMapping("/loginFailed")
     public String loginFailed() throws Exception {
-        return "/user/loginFailed.jsp";
+        return "user/loginFailed";
     }
 }

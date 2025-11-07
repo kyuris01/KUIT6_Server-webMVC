@@ -6,12 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="a157a7a7-de5a-4e74-9587-369be9f9f499" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/java-webMVC.iws" beforeDir="false" afterPath="$PROJECT_DIR$/java-webMVC.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jwp/controller/CreateQuestionController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jwp/controller/CreateQuestionFormController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jwp/controller/ShowQuestionController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jwp/controller/UpdateQuestionController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jwp/controller/UpdateQuestionFormController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jwp/controller/UpdateUserFormController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/core/mvc/RequestMapping.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jwp/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jwp/controller/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jwp/controller/QnaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jwp/controller/QnaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jwp/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jwp/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jwp/support/context/ContextLoaderListener.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +61,11 @@
   "keyToString": {
     "Application.WebServerLauncher.executor": "Run",
     "Gradle.Upgrade Gradle wrapper.executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "Spring Boot.WebServerLauncher.executor": "Run",
     "git-widget-placeholder": "kyuris01-week6",
     "node.js.selected.package.tslint": "(autodetect)",
     "project.structure.last.edited": "Global Libraries",
@@ -75,7 +79,7 @@
       <recent name="C:\Users\window10\IdeaProjects\KUIT6_Server-webMVC\src\main" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.WebServerLauncher">
     <configuration name="WebServerLauncher" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="KUIT6_Server-webMVC.java-webMVC.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="jwp.WebServerLauncher" />

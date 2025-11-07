@@ -44,7 +44,7 @@ public class QnaController {
             throw new IllegalArgumentException();
         }
         model.addAttribute("question", question);
-        return "/qna/updateForm.jsp";
+        return "qna/updateForm";
     }
 
     @PostMapping("/create")
@@ -57,7 +57,7 @@ public class QnaController {
     @GetMapping("/form")
     public String createForm(HttpSession session) throws Exception {
         if (UserSessionUtils.isLogined(session)) {          // 회원만 질문 등록 가능
-            return "/qna/form.jsp";
+            return "qna/form";
         }
         return "redirect:/user/loginForm";
     }
@@ -66,6 +66,6 @@ public class QnaController {
     public String show(@RequestParam String questionId, Model model) throws Exception {
         Question question = questionDao.findByQuestionId(Integer.parseInt(questionId));
         model.addAttribute("question", question);
-        return "/qna/show.jsp";
+        return "qna/show";
     }
 }
