@@ -5,53 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a157a7a7-de5a-4e74-9587-369be9f9f499" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.run/WebServerLauncher.run.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.run/WebServerLauncher.run.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/WebServerLauncher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jwp/WebServerLauncher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/core/jdbc/ConnectionManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/core/jdbc/JdbcTemplate.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/core/jdbc/KeyHolder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/core/jdbc/PreparedStatementSetter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/core/jdbc/RowMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/core/mvc/Controller.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/core/mvc/DispatcherServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/core/mvc/ForwardController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-webMVC.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/java-webMVC.ipr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-webMVC.iws" beforeDir="false" afterPath="$PROJECT_DIR$/java-webMVC.iws" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/jwp/controller/CreateQuestionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jwp/controller/CreateQuestionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jwp/controller/CreateQuestionFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jwp/controller/CreateQuestionFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jwp/controller/CreateUserController.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/jwp/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jwp/controller/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jwp/controller/ListUserController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jwp/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jwp/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jwp/controller/LogoutController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jwp/controller/LogoutController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jwp/controller/ShowQuestionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jwp/controller/ShowQuestionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jwp/controller/UpdateQuestionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jwp/controller/UpdateQuestionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jwp/controller/UpdateQuestionFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jwp/controller/UpdateQuestionFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jwp/controller/UpdateUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jwp/controller/UpdateUserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jwp/controller/UpdateUserFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jwp/controller/UpdateUserFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jwp/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jwp/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jwp/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jwp/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/WEB-INF/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/css/styles2.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/styles2.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/home.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/img/KUIT.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/img/KUIT.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/img/picture.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/img/picture.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/include/header.jspf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/include/header.jspf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/include/navigation.jspf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/include/navigation.jspf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/js/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/scripts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/qna/form.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/qna/form.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/qna/show.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/qna/show.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/qna/updateForm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/qna/updateForm.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/user/form.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/user/form.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/user/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/user/list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/user/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/user/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/user/loginFailed.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/user/loginFailed.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/user/updateForm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/user/updateForm.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jwp/dao/QuestionDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jwp/dao/QuestionDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jwp/model/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jwp/model/Question.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,16 +63,29 @@
     "Gradle.Upgrade Gradle wrapper.executor": "Run",
     "git-widget-placeholder": "kyuris01-week6",
     "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Global Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.42068964",
-    "settings.editor.selected.configurable": "preferences.keymap"
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\window10\IdeaProjects\KUIT6_Server-webMVC\src\main" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="WebServerLauncher" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="KUIT6_Server-webMVC.java-webMVC.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="jwp.WebServerLauncher" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.jwp.WebServerLauncher" />
+      <item itemvalue="Spring Boot.WebServerLauncher" />
+    </list>
   </component>
   <component name="TaskManager">
     <servers />

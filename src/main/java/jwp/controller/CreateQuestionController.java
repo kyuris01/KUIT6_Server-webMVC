@@ -2,15 +2,18 @@ package jwp.controller;
 
 import jwp.dao.QuestionDao;
 import jwp.model.Question;
+import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Controller;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-public class CreateQuestionController implements Controller {
+@Controller
+@RequiredArgsConstructor
+public class CreateQuestionController {
 
-    private final QuestionDao questionDao = new QuestionDao();
+    private final QuestionDao questionDao;
 
-    @Override
     public String execute(HttpServletRequest req, HttpServletResponse resp) throws Exception {
         Question question = new Question(
                 req.getParameter("writer"),
